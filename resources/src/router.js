@@ -1,15 +1,28 @@
+/**
+ * Created by banYing on 2017/12/19 0019.
+ */
 import React from 'react';
-import { Router, Route, Switch } from 'dva/router';
-import IndexPage from './routes/IndexPage';
+import {Route, BrowserRouter, Switch} from 'react-router-dom'
 
-function RouterConfig({ history }) {
-  return (
-    <Router history={history}>
-      <Switch>
-        <Route path="/" exact component={IndexPage} />
-      </Switch>
-    </Router>
-  );
+
+import Home from './home'
+import User from './user/user'
+import Case from './case/case'
+
+
+class MyRoute extends React.Component {
+    render() {
+        return (
+            <BrowserRouter>
+                <Switch>
+
+                    <Route path="/user" component={User}/>
+                    <Route path="/case" component={Case}/>
+                    <Route path="/" component={Home}/>
+
+                </Switch>
+            </BrowserRouter>
+        )
+    }
 }
-
-export default RouterConfig;
+export default MyRoute;
