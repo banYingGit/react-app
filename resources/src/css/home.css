@@ -3,11 +3,32 @@
     height: auto;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.panel {
+    padding: 10px 15px;
+    margin: 15px 0;
+    background: #fff;
+}
+
+.m-b-60 {
+    margin-bottom: 60px;
+}
+
+.panel > .title {
+    text-align: center;
+    font-size: 18px;
+    color: #0061da;
+    border-bottom: solid 1px #eee;
+    line-height: 40px;
+}
+
+.panel > .content p {
+    margin: 10px 15px 0 15px;
+    line-height: 25px;
+    color: #333;
+}
+
+.panel > .service {
+    width: 100%;
+
+
 }

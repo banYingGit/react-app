@@ -14,7 +14,7 @@ body {
   background-color: white;
 }
 .tab-bar-fixed{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 50px;
   bottom: 0;
