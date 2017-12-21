@@ -44,10 +44,14 @@ class Home extends Component {
             }],
         service: [
             {src: service1, title: "VUE构建网站", detail: 'vue是一套构建用户界面的渐进式框架。只关注视图层，采用自底向上增量开发的设计。'},
-            {src: service2, title: "VUE构建网站", detail: 'vue是一套构建用户界面的渐进式框架。只关注视图层，采用自底向上增量开发的设计。'},
-            {src: service3, title: "VUE构建网站", detail: 'vue是一套构建用户界面的渐进式框架。只关注视图层，采用自底向上增量开发的设计。'},
-            {src: service4, title: "VUE构建网站", detail: 'vue是一套构建用户界面的渐进式框架。只关注视图层，采用自底向上增量开发的设计。'},
-            {src: service5, title: "VUE构建网站", detail: 'vue是一套构建用户界面的渐进式框架。只关注视图层，采用自底向上增量开发的设计。'}
+            {
+                src: service2,
+                title: "Angularjs 4.0 + Ionic 3.0",
+                detail: ' AngularJS最适于客户端的单页面应用，不是功能库，是用来开发动态网页的框架，专注于扩张HTML的功能，提供动态数据绑定。'
+            },
+            {src: service3, title: "React 构建网站", detail: 'React是一个用于构建用户界面的JAVASCRIPT库，用于构建UI，性能较高，代码逻辑简单。'},
+            {src: service4, title: "H5游戏开发", detail: 'H5开发游戏兼容各类终端设备，通过游戏品牌植入，线上商城转化，促销销售转化。'},
+            {src: service5, title: "微信公众号/企业号/小程序开发", detail: '挖掘移动互联市场、获取精准客户的关键手段，通过互动功能，可有效促进客户粘度。'}
         ]
 
     };
@@ -89,7 +93,7 @@ class Home extends Component {
                         <ul className="service">
                             {this.state.service.map((item) => {
                                 return <li>
-                                    <img src={item.src} alt="" style={{width: '100%', verticalAlign: 'top'}}/>
+                                    <img className="pic" src={item.src} alt=""/>
                                     <p className="service-title">{item.title}</p>
                                     <p className="service-detail">{item.detail}</p>
                                 </li>

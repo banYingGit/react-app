@@ -9,10 +9,6 @@
     background: #fff;
 }
 
-.m-b-60 {
-    margin-bottom: 60px;
-}
-
 .panel > .title {
     text-align: center;
     font-size: 18px;
@@ -30,5 +26,116 @@
 .panel > .service {
     width: 100%;
 
+}
 
+.panel > .service li {
+    position: relative;
+    padding: 10px 0 10px 85px;
+    margin: 10px 0;
+    height: 70px;
+    border-bottom: solid 1px #eee;
+}
+
+.panel > .service li .pic {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.panel > .service li .service-title {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.panel > .service li .service-detail {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.user-box ul {
+    padding: 0;
+    margin: 10px 0
+}
+
+.user-box ul li {
+    position: relative;
+
+    padding: 0 15px;
+
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px #eee;
+}
+
+.user-box > img {
+    display: block;
+    width: 100%;
+}
+
+.case {
+    margin-top: 10px;
+}
+
+.case-list {
+    display: block;
+    background: #fff;
+    padding: 15px 10px;
+}
+
+.case-list ul {
+
+}
+
+.case-list ul li {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: solid 1px #eee;
+    break-inside: avoid;
+}
+
+.case-m ul {
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.case-p ul {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.case-g ul {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+
+.case-list ul li .pic {
+    display: block;
+    width: 100%;
+}
+
+.case-list ul li > p {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.case-list ul:after {
+    display: block;
+    clear: both;
+    content: '';
 }
